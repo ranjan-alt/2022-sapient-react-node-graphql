@@ -1,0 +1,25 @@
+Q.why do we use api gateway ??
+Ans: see the image , why to use so may ip if we can handle that with one ip
+
+Q. Rest Operator usage ? es07
+Ans: secondly we saw if we wont use rest operator there is a possibilty of array getting mutated
+and with the help of rest oprator we created a new array without effecting the original one
+
+Q. what is array destructuring ? es10
+ans : lets take an example
+let person = {
+firstName: "ranjan",
+lastName: "kumar",
+email: "ranjan@gmail.com",
+city: "bengalurur",
+};
+function display({ firstName, lastName, city, email }) {
+console.log(`hi ${firstName} how are you in ${city}`);
+}
+
+here we saw we use {} in display function if we wont use it will give an error very important concept to be used in array destructuring
+
+Q: why do we use async and await keyword ?
+Ans: This was the most catchy concept seen in promises.js .
+when we used simple then it gave promise but we didnt get the value ie 10
+to get the value we need to use these keyword since promises will either resolve or reject but to get the value of promise we have to use the keyword async and await
