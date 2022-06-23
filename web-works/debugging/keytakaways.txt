@@ -23,3 +23,31 @@ Q: why do we use async and await keyword ?
 Ans: This was the most catchy concept seen in promises.js .
 when we used simple then it gave promise but we didnt get the value ie 10
 to get the value we need to use these keyword since promises will either resolve or reject but to get the value of promise we have to use the keyword async and await
+
+
+# generators - helps us to generate the next value
+
+let arry = [32,2,4,67,8, 01,45]
+for (let i=0; i<arry.length; i++){
+    console.log(i)
+}
+
+------------------
+arry.forEach((val)=>console.log(val))
+
+
+
+
+day2 :
+mongodb community download take any version 4 and  donot download released candidate 
+make changes for mongo by copy and adding path on clicking ENV on search 
+- create a folder in desktop 
+goto that folder 
+and in command prompt write mongod --dbpath . 
+and mongo compass click on connect it will start the server 
+
+now OPEN another shell and write mongo
+1- we can create database with this command 
+show dbs
+use sap_db
+db.emps.insert({empName:"ranjan", empSal: 1234});
