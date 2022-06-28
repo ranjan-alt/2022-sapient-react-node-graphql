@@ -1,0 +1,28 @@
+
+day2 :
+mongodb community download take any version 4 and  donot download released candidate 
+make changes for mongo by copy and adding path on clicking ENV on search 
+- create a folder in desktop 
+goto that folder 
+
+SHELL 1: ------
+and in command prompt write mongod --dbpath . 
+and mongo compass click on connect it will start the server 
+
+
+SHELL 2--------
+now OPEN another shell and write mongo
+1- we can create database with this command 
+show dbs
+use sap_db (if db is not created then it will create it)
+db.emps.insert({empName:"ranjan", empSal: 1234});
+
+SHELL -3 
+in another shell goto sapient and emps.json file 
+mongoimport --host localhost --db sap-db --collection emps --file ./emps.json
+with this command we can add the emps.json file in the mongodb
+
+
+now goto SHELL 2 and write the command 
+
+db.emps.find().pretty(); now this will load all the data of emps.json file 
