@@ -22,7 +22,19 @@ in another shell goto sapient and emps.json file
 mongoimport --host localhost --db sap-db --collection emps --file ./emps.json
 with this command we can add the emps.json file in the mongodb
 
+make sure to do this once you create emps.json file 
+export command --  mongoexport --db sap-db --host localhost --collection emps --out=exp-emps.json
+
 
 now goto SHELL 2 and write the command 
 
 db.emps.find().pretty(); now this will load all the data of emps.json file 
+
+
+
+at last there is one question 
+var cusrsor1 = db.emps.find({}, {_id:0, empName:1, empsal:1});
+while(cusrsor1.hasNext()){
+    let record = cusrsor1.next();
+    db.new-emps.insert({empName:record.empName.toUpperCase(),salary:record.empsal});
+}
