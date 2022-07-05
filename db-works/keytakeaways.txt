@@ -1,5 +1,5 @@
 
-day2 :
+day3 :
 mongodb community download take any version 4 and  donot download released candidate 
 make changes for mongo by copy and adding path on clicking ENV on search 
 - create a folder in desktop 
@@ -40,7 +40,7 @@ while(cusrsor1.hasNext()){
 }
 
 
-day 3 - 17-6-2022
+day 4 - 17-6-2022 see again
 open shell and write mongod --dbpath .
 
 open another shell and wrtie mongo 
@@ -58,3 +58,43 @@ cd db-works
 
 mongoimport --db sap-db --collection some_mock_db --file ./mock-data.json --host localhost 
 with this command we can directly store data in mongodb 
+
+db.db.some_mock_db.find().explain("executionStats")
+db.db.some_mock_db.find({"gender":"Female"}).explain("executionStats")
+
+day 5 - 20-6-2022 NODEJS ---------------------------------------------
+- Here we will talk about webserver
+-http
+    -tomcat
+    -jetty
+        -NODEJS
+    -netty
+    -apache
+-Application 
+  -http
+  -raw  
+  -ftp/smtp...
+    jboss
+    glass fish
+    web-logic
+    web-sphere
+    ITS
+
+here nodejs is a webserver
+nodejs is lil bit different in its category and
+    -it is built on top of JS and programming language c/ c++
+    -amalgamation between js + c++
+    -you can invoke c code from JS- native library
+    -v8 engine
+
+
+    protocol
+        -http
+        -1.0 -statefull protocol -old model
+        -1.1 -stateless protocol
+        -2.0 -pull requests
+        protcol evolved with time see the refrence video on protocols
+
+        ques- assign a thred means ? 
+            -what is session or cookie
+            - what is eventemitter
