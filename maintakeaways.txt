@@ -1,0 +1,100 @@
+
+day3 :
+mongodb community download take any version 4 and  donot download released candidate 
+make changes for mongo by copy and adding path on clicking ENV on search 
+- create a folder in desktop 
+goto that folder 
+
+SHELL 1: ------
+and in command prompt write mongod --dbpath . 
+and mongo compass click on connect it will start the server 
+
+
+SHELL 2--------
+now OPEN another shell and write mongo
+1- we can create database with this command 
+show dbs
+use sap_db (if db is not created then it will create it)
+db.emps.insert({empName:"ranjan", empSal: 1234});
+
+SHELL -3 
+in another shell goto sapient and emps.json file 
+mongoimport --host localhost --db sap-db --collection emps --file ./emps.json
+with this command we can add the emps.json file in the mongodb
+
+make sure to do this once you create emps.json file 
+export command --  mongoexport --db sap-db --host localhost --collection emps --out=exp-emps.json
+
+
+now goto SHELL 2 and write the command 
+
+db.emps.find().pretty(); now this will load all the n format of emps.json file 
+
+
+
+at last there is one question 
+var cusrsor1 = db.emps.find({}, {_id:0, empName:1, empsal:1});
+while(cusrsor1.hasNext()){
+    let record = cusrsor1.next();
+    db.new-emps.insert({empName:record.empName.toUpperCase(),salary:record.empsal});
+}
+
+
+day 4 - 17-6-2022 see again
+open shell and write mongod --dbpath .
+
+open another shell and wrtie mongo 
+show dbs
+use db-name 
+- to drop collection 
+db.capCol.drop()
+
+MOCKAROO - just to generate data
+run these command in vs code terminal at 2022-sapient-react-node folder
+1-mongotop
+2-mongostat
+
+cd db-works
+
+mongoimport --db sap-db --collection some_mock_db --file ./mock-data.json --host localhost 
+with this command we can directly store data in mongodb 
+
+db.db.some_mock_db.find().explain("executionStats")
+db.db.some_mock_db.find({"gender":"Female"}).explain("executionStats")
+
+day 5 - 20-6-2022 NODEJS ---------------------------------------------
+- Here we will talk about webserver
+-http
+    -tomcat
+    -jetty
+        -NODEJS
+    -netty
+    -apache
+-Application 
+  -http
+  -raw  
+  -ftp/smtp...
+    jboss
+    glass fish
+    web-logic
+    web-sphere
+    ITS
+
+here nodejs is a webserver
+nodejs is lil bit different in its category and
+    -it is built on top of JS and programming language c/ c++
+    -amalgamation between js + c++
+    -you can invoke c code from JS- native library
+    -v8 engine
+
+
+    protocol
+        -http
+        -1.0 -statefull protocol -old model
+        -1.1 -stateless protocol
+        -2.0 -pull requests
+        protcol evolved with time see the refrence video on protocols
+
+        ques- assign a thred means ? 
+            -what is session or cookie
+            - what is eventemitter
