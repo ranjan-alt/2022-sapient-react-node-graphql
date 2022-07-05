@@ -28,7 +28,7 @@ export command --  mongoexport --db sap-db --host localhost --collection emps --
 
 now goto SHELL 2 and write the command 
 
-db.emps.find().pretty(); now this will load all the data of emps.json file 
+db.emps.find().pretty(); now this will load all the n format of emps.json file 
 
 
 
@@ -38,3 +38,23 @@ while(cusrsor1.hasNext()){
     let record = cusrsor1.next();
     db.new-emps.insert({empName:record.empName.toUpperCase(),salary:record.empsal});
 }
+
+
+day 3 - 17-6-2022
+open shell and write mongod --dbpath .
+
+open another shell and wrtie mongo 
+show dbs
+use db-name 
+- to drop collection 
+db.capCol.drop()
+
+MOCKAROO - just to generate data
+run these command in vs code terminal at 2022-sapient-react-node folder
+1-mongotop
+2-mongostat
+
+cd db-works
+
+mongoimport --db sap-db --collection some_mock_db --file ./mock-data.json --host localhost 
+with this command we can directly store data in mongodb 

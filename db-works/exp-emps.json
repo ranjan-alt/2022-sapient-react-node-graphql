@@ -1,0 +1,9 @@
+{"_id":{"$oid":"62ba5a69c759cadc01c65c61"},"empName":" santosh"," empSal":3344,"address":"delhi"}
+{"_id":{"$oid":"62ba5a69c759cadc01c65c62"},"empName":" preet"," empSal":3344,"address":"Benagaluru"}
+{"_id":{"$oid":"62ba5a69c759cadc01c65c63"},"empName":" ranjan"," empSal":3344,"address":"kolkata"}
+{"_id":{"$oid":"62ba5a69c759cadc01c65c64"},"empName":" kumar"," empSal":3344,"address":"mumbai"}
+{"_id":{"$oid":"62ba5abc5d5b48a6f4cae9e9"},"empName":"kumar","empsal":123.0}
+{"_id":{"$oid":"62ba6328128be706d0e988d9"},"empName":" preet"," empSal":3344,"address":"Benagaluru","email":"preet#gmail.com"}
+{"_id":{"$oid":"62ba6328128be706d0e988da"},"empName":" santosh"," empSal":3344,"address":"delhi"}
+{"_id":{"$oid":"62ba6328128be706d0e988db"},"empName":" ranjan"," empSal":3344,"address":"kolkata"}
+{"_id":{"$oid":"62ba6328128be706d0e988dc"},"empName":" kumar"," empSal":3344,"address":"mumbai","email":"kumar@hotmail.com"}
