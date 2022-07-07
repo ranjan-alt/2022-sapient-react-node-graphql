@@ -96,5 +96,13 @@ nodejs is lil bit different in its category and
         protcol evolved with time see the refrence video on protocols
 
         ques- assign a thred means ? 
-            -what is session or cookie
-            - what is eventemitter
+            -what is session or cookie ?????
+            - what is eventemitter?????
+
+in nodejs everything is treated as a module 
+
+eventemitter is an object
+
+in es-6 a class can extend and another class
+
+21-6-2022 
