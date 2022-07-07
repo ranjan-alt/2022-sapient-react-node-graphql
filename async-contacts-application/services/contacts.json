@@ -1,5 +1,5 @@
 {
-  "idCounter": 2,
+  "idCounter": 5,
   "contacts": [
     {
       "id": 1,
@@ -14,6 +14,27 @@
       "email": "kumar@gmail.com",
       "phone": 123456789,
       "city": "Mumbai"
+    },
+    {
+      "id": 3,
+      "name": "monga",
+      "email": "monga@gmail.com",
+      "phone": 987654563,
+      "city": "bhagalpur"
+    },
+    {
+      "id": 4,
+      "name": "monga",
+      "email": "monga@gmail.com",
+      "phone": 987654563,
+      "city": "bhagalpur"
+    },
+    {
+      "id": 5,
+      "name": "monga",
+      "email": "monga@gmail.com",
+      "phone": 987654563,
+      "city": "bhagalpur"
     }
   ]
 }
