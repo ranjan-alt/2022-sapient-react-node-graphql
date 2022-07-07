@@ -1,0 +1,25 @@
+GET http://localhost:3000 HTTP/1.1
+
+
+
+GET http://localhost:3000/example/101/ranjan HTTP/1.1
+####
+GET http://localhost:3000/example/101/ranjan?order=ascending&noofrecords=10 HTTP/1.1
+####
+GET http://localhost:3000/heep 
+###
+
+POST http://localhost:3000/example HTTP/1.1
+Content-Type: application/json
+
+{
+    "empid":101,
+    "empname":"ranjan"
+}
+####
+
+
+
+GET http://localhost:3000/example-route HTTP/1.1
+
+####

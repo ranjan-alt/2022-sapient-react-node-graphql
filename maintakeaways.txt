@@ -106,3 +106,6 @@ eventemitter is an object
 in es-6 a class can extend and another class
 
 21-6-2022 
+most important video on nodejs , logic building 
+--> here we created contacts Application and the code is synchronous 
+which is not good we have to make calls async

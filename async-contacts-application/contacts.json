@@ -1,0 +1,19 @@
+{
+  "idCounter": 2,
+  "contacts": [
+    {
+      "id": 1,
+      "name": "ranjan",
+      "email": "ranjan@gmail.com",
+      "phone": 8076868474,
+      "city": "Delhi"
+    },
+    {
+      "id": 2,
+      "name": "Kumar",
+      "email": "kumar@gmail.com",
+      "phone": 123456789,
+      "city": "Mumbai"
+    }
+  ]
+}
