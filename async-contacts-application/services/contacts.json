@@ -3,9 +3,9 @@
   "contacts": [
     {
       "id": 1,
-      "name": "ranjan",
+      "name": "ranjan test",
       "email": "ranjan@gmail.com",
-      "phone": 8076868474,
+      "phone": 12345678,
       "city": "Delhi"
     },
     {
