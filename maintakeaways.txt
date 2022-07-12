@@ -114,4 +114,16 @@ best example see internet - setImmediate(), process.nextTick() and prmise.then()
 
 
 
-27-06-2022 -- reatc js started  from here 
+27-06-2022 -- REACT js started  from here 
+28-06-2022 -- atomic design pattern
+
+30-06-2022 -- FUNCTIONAL component -- 2:40:30
+
+function LatestComponent (){
+    const [one, two] = useState('laptop')
+    return(
+        <div></div>
+    )
+}
+
+one will hold the value of laptop and two will mutate the value of laptop
